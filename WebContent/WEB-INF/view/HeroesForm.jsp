@@ -7,16 +7,24 @@
 <html>
 <head>
 <link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.min.css"/>">
+<link rel="stylesheet" href="<c:url value="/resources/galery.css"/>">
+<script src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
+
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-	<h2>Axe Axe's</h2>
-    <table>
-        <tr>
-            <td>Type :</td>
-            <td>${type}</td>
-        </tr>
+<body style="background-color:black">
+<div class="row">
+ <div class="col-lg-4"></div>
+  <div class="col-lg-4 mt-5">
+  <div class="gallery">
+      <img src="<c:url value="/resources/axes.jpg"/>" />
+      <div class="desc">
+        <div class="Nama">
+          <b>${type}</b>
+        </div>
+        <div>
+	<table>
         <tr>
             <td>STR :</td>
             <td>${strength}</td>
@@ -30,5 +38,12 @@
             <td>${agility}</td>
         </tr>
     </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4"></div>
+  </div>
+
 </body>
 </html>

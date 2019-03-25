@@ -7,11 +7,15 @@
 <html>
 <head>
 <link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.min.css"/>">
+<link rel="stylesheet" href="<c:url value="/resources/style.css"/>">
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-	<h1>Axe</h1>
+<body class="bgbody">
+<div class="row">
+  <div class="col-lg-4"></div>
+  <div class="col-lg-4 mt-5" style="background-color:rgba(255, 255, 255, 0.9)">
+  <h1>Axe</h1>
 	<form:form method="POST"
           action="processForm" modelAttribute="axe">
              <table>
@@ -36,5 +40,8 @@
                 </tr>
             </table>
         </form:form>
+        </div>
+  <div class="col-lg-4"></div>
+</div>
 </body>
 </html>
